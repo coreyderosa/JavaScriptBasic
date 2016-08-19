@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->    
+	<meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>JavaScript Course- Item 13 of 15</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--add any extra css file below.  Replace the file name with the #.css-->
+    <link href="#.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script>
+        document.createElement("article");
+        document.createElement("aside");
+        document.createElement("footer");
+        document.createElement("header");
+        document.createElement("main");
+        document.createElement("nav");
+        document.createElement("section");
+    </script>
+    <![endif]-->	
+  </head>
+  <body>
+    <h1>Corey DeRosa</h1>
+	<h2>JavaScript Course</h2>
+	<h3>Item 13 of 15</h3>
+	<h4>Exercise 1</h4>
+	
+<script type = "text/javascript">
+	var today = new Date();
+	var thisDay = today.getDay();
+	var myDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];	
+	var todayDay = myDays[thisDay];
+	
+	var thisHour = today.getHours();
+		if (thisHour > 12){thisHour = thisHour - 12 +"PM";} else{thisHour = thisHour + "AM";}
+	var thisMinute = today.getMinutes();
+	var thisSecond = today.getSeconds();
+	
+	document.write("Today is " + todayDay + " The time is currently " + thisHour + ":" + thisMinute + ":" + thisSecond);
+</script>
+	
+  </body>
+</html>
