@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tizag.com Tutorial</title>
+	<script src="tizagTutorial.js" type="text/javascript"></script>
+	<script type = "text/javascript">
+
+/*	Exercise #6
+
+function leapYear(){
+var year = prompt("Is year leap year?");
+var date = new Date(year, 1, 29);
+document.write(date.getDate() == 29);
+}
+*/
+
+/* Exercise #7
+for (year = 2014; year <= 2050; year++){
+	var d = new Date(year, 0, 1);
+	if(d.getDate() == 0)
+		console.log("January 1st is a Sunday in the year " + year);
+}
+*/
+
+/* Exercise #8
+function getNum(){
+var min = 0;
+var max = 10;
+var userNum = prompt("Pick a number between 0 and 10");
+var Num = (Math.round(Math.random()* (max - min) + min));
+if(Num == userNum){
+document.write("Good guess!");
+}
+else{
+document.write("Awww, the number was " + Num + ". Better luck next time...");
+document.close();
+}
+}
+*/
+/* Exercise #10
+function multiply(){
+	var firstNum = document.getElementById("first");//the value entered in id ="first" input is set to firstNum with document.getElementById("first")
+	var secondNum = document.getElementById("second");
+	alert(firstNum.value + " x " + secondNum.value + " = " + firstNum.value * secondNum.value);
+	document.getElementById("answer").innerHTML = (firstNum.value * secondNum.value);
+}
+
+function divide(){
+	var firstNum = document.getElementById("first");
+	var secondNum = document.getElementById("second");
+	alert(firstNum.value + " / " + secondNum.value + " = " + firstNum.value / secondNum.value);
+	document.getElementById("answer").innerHTML = (firstNum.value / secondNum.value);
+}
+*/
+
+/* Exercise #11
+function fahrenheit(){
+var f = document.getElementById("fah");
+document.getElementById("fTOc").innerHTML = ((f.value - 32) * (5/9)); 
+}
+
+function celcius(){
+var c = document.getElementById("cel");
+document.getElementById("cTOf").innerHTML = ((c.value * (9/5) + 32));
+}
+*/
+/* Exercise #12
+function getURL(){
+alert(window.location.href);
+}
+*/
+	</script>
+
+  </head>
+ 
+<body onload="getURL();">
+
+
+ 
+<!--  Exercise #11
+ <body>
+<p>Enter Fahrenheit temp: </p>
+<input id="fah" type="text" placeholder="Fahrenheit" width="50" height="20"></input>
+<textarea id="fTOc" type="text" placeholder="F to C" rows="1" cols="10"></textarea>
+<button type="button" onclick="fahrenheit();">F to C</button>
+<br/>
+<br/>
+<p>Enter Celcius temp: </p>
+<input id="cel" type="text" placeholder="Celcius" width="50" height="20"></input> 
+<textarea id="cTOf" type="text" placeholder="C to F" rows="1" cols="10"></textarea>
+<button type="button" onclick="celcius();">C to F</button>
+<br/>
+<br/>
+-->
+<!--  Exercise #10
+<p>Enter your first number here: </p>
+<input id="first" type="text" placeholder="1st Number" width="120" height="20"></input>
+<br/>
+<br/>
+<p>Enter your second number here: </p>
+<input id="second" type="text" placeholder="2nd Number" width="120" height="20"></input>
+<br/>
+<br/>
+<button type="button" onclick="multiply();">Multiply</button>
+<button type="button" onclick="divide();">Divide</button>
+<p>Your answer = <textarea rows="1" cols="20" id="answer"> </textarea></p>
+-->
+<!-- Exercise #8 <button type="button" onclick="getNum();">Guess</button> -->
+
+<!-- Exercise #6 <body onload="leapYear();">-->
+
+<!-- Exercise #2 <button onclick="window.print();" value = "print">Print</button>-->
+
+<!-- Exercise #1
+<p onclick="currentDate();">Click me for today's date and current time</p>
+-->
+
+
+<script type="text/javascript">
+
+/*  Exercise #9
+var tMas = new Date(2016, 11, 25);
+var today = new Date();
+var oneDay = (86400 * 1000)// Number of milliseconds in one day
+console.log("Hey kids, only " + (Math.round((tMas- today)/(oneDay))) + " days until Christmas!!");
+*/
+
+/*  Exercise # 4
+  var a = 5;
+  var b = 6;
+  var c = 7;
+  var p = a + b + c;
+  var tri = (Math.sqrt(p*((p-a)*(p-b)*(p-c)));
+  console.log(tri);
+*/
+  
+/*  Exercise #3 
+ function currentDate(){
+	var today = new Date();
+	var month = today.getMonth();
+		if(month < 10)
+			month = "0" + month;
+	var day = today.getDate();
+	var year = today.getFullYear();
+	alert(month + "/" + day + "/" + year);
+  }
+*/ 
+ 
+/*  Exercise # 1
+var currentTime = new Date(); 
+var DOW = currentTime.getDay();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var dayOfTheWeek = days[DOW];
+var day = currentTime.getDate();
+var month = currentTime.getMonth() + 1;
+var year = currentTime.getFullYear();
+var hour = currentTime.getHours();
+var amPM = "am";
+	if (hour > 11){
+		amPM = "pm";
+	}
+	if(hour > 12){
+		hour = hour - 12;
+	}
+	if(hour == 0){
+		hour = 12;
+	}
+var minutes = currentTime.getMinutes();
+	if (minutes < 10){
+		minutes = "0" + minutes;
+	}
+var seconds = currentTime.getSeconds();
+	if(seconds < 10){
+		seconds = "0" + seconds;
+	}
+document.write(hour + ":" + minutes + ":" + seconds + amPM + "<br/>");	
+document.write(dayOfTheWeek + " " + month + "/" + day + "/" + year);
+*/
+
+
+</script>
+  
+
+
+  </body>
+</html>
